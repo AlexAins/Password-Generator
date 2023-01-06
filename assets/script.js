@@ -88,31 +88,49 @@ var upperCasedCharacters = [
   'Z'
 ];
 
-// Function to prompt user for password options
-function getPasswordOptions() {
+var includeLower = confirm("Would you like to include Lowercase Characters in your Password?");
 
-}
+var includeUpper = confirm("Would you like to include Uppercase Characters in your Password?");
 
-// Function for getting a random element from an array
-function getRandom(arr) {
+var includeNumber = confirm("Would you like to include Numerical Characters in your Password?");
 
-}
+var includeSpecial = confirm("Would you like to include Special Characters in your Password?");
 
-// Function to generate password with user input
-function generatePassword() {
+console.log(includeLower)
 
-}
 
-// Get references to the #generate element
-var generateBtn = document.querySelector('#generate');
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector('#password');
 
-  passwordText.value = password;
-}
 
-// Add event listener to generate button
-generateBtn.addEventListener('click', writePassword);
+
+
+
+
+// // Function to prompt user for password options
+// function getPasswordOptions() {
+
+// }
+
+// // Function for getting a random element from an array
+// function getRandom(arr) {
+
+// }
+
+// // Function to generate password with user input
+// function generatePassword() {
+
+// }
+
+// // Get references to the #generate element
+// var generateBtn = document.querySelector('#generate');
+
+// // Write password to the #password input
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector('#password');
+
+//   passwordText.value = password;
+// }
+
+// // Add event listener to generate button
+// generateBtn.addEventListener('click', writePassword);
