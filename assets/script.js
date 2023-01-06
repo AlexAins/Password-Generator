@@ -96,10 +96,27 @@ var includeNumber = confirm("Would you like to include Numerical Characters in y
 
 var includeSpecial = confirm("Would you like to include Special Characters in your Password?");
 
-console.log(includeLower)
 
+function listCharacters(){
+  let startingList = [];
 
+  if (includeLower === true){
+    startingList = startingList.concat(lowerCasedCharacters);
+  }
+  if (includeUpper === true){
+    startingList = startingList.concat(upperCasedCharacters);
+  }
+  if (includeNumber === true){
+    startingList = startingList.concat(numericCharacters);
+  }
+  if (includeSpecial === true){
+    startingList = startingList.concat(specialCharacters);
+  }
+  
+  finalCharacters = startingList
+}
 
+listCharacters();
 
 
 
