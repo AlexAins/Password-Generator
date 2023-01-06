@@ -20,10 +20,14 @@
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
-        
+
         <div class="card-body">
-          <h3>Password Criteria</h3>
+          <h3>Password Criteria:</h3>
           <form>
+            <fieldset>
+              <label for="lengthNumber">Length of Password (between 10 and 64)</label>
+              <input type="number" class="characterCheckbox" id="lengthNumber" min="10" max="64">
+            </fieldset>
             <fieldset>
               <input type="checkbox" class="characterCheckbox" id="lowercaseCheck">
               <label for="lowercaseCheck">Lowercase</label>
@@ -34,12 +38,8 @@
               <input type="checkbox" class="characterCheckbox" id="specialCheck">
               <label for="specialCheck">Special Characters</label>
             </fieldset>
-            <fieldset>
-              <input type="number" class="characterCheckbox" id="lengthNumber" min="10" max="64">
-              <label for="lengthNumber">Length of Password (between 10 and 64)</label>
-            </fieldset>
           </form>
-
+          <h3>Your Password:</h3>
           <textarea
             readonly
             id="password"
