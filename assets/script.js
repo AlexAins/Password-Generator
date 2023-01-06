@@ -122,22 +122,39 @@ function listCharacters(){
   if (includeLower === true){
     startingList = startingList.concat(lowerCasedCharacters);
   }
-  if (includeUpper === true){
+  else if (includeUpper === true){
     startingList = startingList.concat(upperCasedCharacters);
   }
-  if (includeNumber === true){
+  else if (includeNumber === true){
     startingList = startingList.concat(numericCharacters);
   }
-  if (includeSpecial === true){
+  else if (includeSpecial === true){
     startingList = startingList.concat(specialCharacters);
   }
   
-  finalCharacters = startingList
+  finalCharacters = startingList;
 }
 
 
+// Function to get length of password. Forcing a number between 10 and 64.
+var length;
 
+function getLength(){
+  var length1 = prompt("How long would you like your Password? \n(Between 10 and 64 characters!)")
 
+  if (length1 < 10){
+    alert("Your Password is too short! \nPlease enter a number between 10 and 64!");
+    getLength();
+  }
+  else if(length1 > 64){
+    alert("Your Password is too long! \nPlease enter a number between 10 and 64!");
+    getLength();
+  }
+  else{
+    length = length1;
+    return;
+  }
+}
 
 
 
