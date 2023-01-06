@@ -88,15 +88,34 @@ var upperCasedCharacters = [
   'Z'
 ];
 
-var includeLower = confirm("Would you like to include Lowercase Characters in your Password?");
+// Creating variables for character options
+var includeLower;
+var includeUpper;
+var includeNumber;
+var includeSpecial;
 
-var includeUpper = confirm("Would you like to include Uppercase Characters in your Password?");
+// Function to ask which character options they want. Forcing at least one option.
+function charactersSelection(){
+  let includeLower1 = confirm("Would you like to include Lowercase Characters in your Password?");
+  let includeUpper1 = confirm("Would you like to include Uppercase Characters in your Password?");
+  let includeNumber1 = confirm("Would you like to include Numerical Characters in your Password?");
+  let includeSpecial1 = confirm("Would you like to include Special Characters in your Password?");
 
-var includeNumber = confirm("Would you like to include Numerical Characters in your Password?");
+  if (includeLower1+includeUpper1+includeSpecial1+includeNumber1 === 0){
+    alert("You need to select at least one type of Characters !");
+    charactersSelection();
+  }
+  else{
+    includeLower = includeLower1;
+    includeUpper = includeUpper1;
+    includeNumber = includeNumber1;
+    includeSpecial = includeSpecial1;
+    return;
+  }
+}
 
-var includeSpecial = confirm("Would you like to include Special Characters in your Password?");
 
-
+// Function to create list of possible characters from chosen character options.
 function listCharacters(){
   let startingList = [];
 
@@ -116,7 +135,6 @@ function listCharacters(){
   finalCharacters = startingList
 }
 
-listCharacters();
 
 
 
