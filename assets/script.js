@@ -116,20 +116,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
-
-
-
-
-// Creating prompts for password options
-// Password Length
-
-// var passwordLength = prompt("How long would you like your Password?");
-
-// if (passwordLength >= 10 && passwordLength <= 64 ) {
-//   alert("Your Password will be " + passwordLength + " characters long!");
-// } 
-// else {
-//   alert("Your password needs to between 10 and 64 characters \nPlease enter a new Password length");
-//   var passwordLength = prompt("How long would you like your Password?");
-// }
-
