@@ -11,7 +11,7 @@
 
   <body>
     <div class="wrapper">
-      
+
       <header>
         <h1>Password Generator</h1>
       </header>
@@ -21,6 +21,17 @@
           <h2>Generate a Password</h2>
         </div>
         <div class="card-body">
+          <h3>Password Criteria</h3>
+          <div>
+            <input type="checkbox" class="characterCheckbox" id="lowercaseCheck">
+            <label for="lowercaseCheck">Lowercase</label>
+            <input type="checkbox" class="characterCheckbox" id="uppercaseCheck">
+            <label for="uppercaseCheck">Uppercase</label>
+            <input type="checkbox" class="characterCheckbox" id="numbersCheck">
+            <label for="numbersCheck">Numbers</label>
+            <input type="checkbox" class="characterCheckbox" id="specialCheck">
+            <label for="specialCheck">Special Characters</label>
+          </div>
           <textarea
             readonly
             id="password"
