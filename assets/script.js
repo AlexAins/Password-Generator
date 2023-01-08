@@ -130,8 +130,6 @@ function listCharacters(){
 }
 
 // Function to get length of password. Forcing a number between 10 and 64.
-var passwordLength;
-
 function getLength(){
   var length1 = prompt("How long would you like your Password? \n(Between 10 and 64 characters!)")
 
@@ -150,7 +148,6 @@ function getLength(){
 }
 
 // Function to generate a random set of number between a set length.
-
 function randomArray(){
   let randomNumbers = [];
 
@@ -162,12 +159,6 @@ function randomArray(){
   randomNumbers1 = randomNumbers
 }
 
-charactersSelection();
-listCharacters();
-getLength();
-console.log(finalCharacters);
-randomArray();
-console.log(randomNumbers1);
 
 // Function to create new array of Password characters and make into a single string
 function passwordArray(){
@@ -183,6 +174,16 @@ function passwordArray(){
   console.log(finalPassword);
 }
 
+
+
+
+
+charactersSelection();
+listCharacters();
+getLength();
+console.log(finalCharacters);
+randomArray();
+console.log(randomNumbers1);
 passwordArray();
 
 
