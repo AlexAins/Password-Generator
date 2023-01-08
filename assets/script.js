@@ -169,7 +169,7 @@ console.log(finalCharacters);
 randomArray();
 console.log(randomNumbers1);
 
-// Function to create new array of Password characters
+// Function to create new array of Password characters and make into a single string
 function passwordArray(){
   let passArray = [];
 
