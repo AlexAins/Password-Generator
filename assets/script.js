@@ -149,42 +149,38 @@ function getLength(){
 
 // Function to generate a random set of number between a set length.
 function randomArray(){
-  let randomNumbers = [];
+  let randomNumbers1 = [];
 
   for (let i = 0; i < passwordLength; i++) {
     let randomNumber = Math.floor(Math.random() * ( finalCharacters.length - 1 + 1)) + 1;
-    randomNumbers.push(randomNumber);
+    randomNumbers1.push(randomNumber);
   }
 
-  randomNumbers1 = randomNumbers
+  randomNumbers = randomNumbers1;
 }
-
 
 // Function to create new array of Password characters and make into a single string
 function passwordArray(){
   let passArray = [];
 
   for (let i=0; i<passwordLength; i++){
-    let passElement = finalCharacters[randomNumbers1[i] - 1];
+    let passElement = finalCharacters[randomNumbers[i] - 1];
     passArray.push(passElement);
   }
 
   finalPassword = passArray.join('');
 
-  console.log(finalPassword);
+  return finalPassword;
 }
-
-
 
 
 
 charactersSelection();
 listCharacters();
 getLength();
-console.log(finalCharacters);
 randomArray();
-console.log(randomNumbers1);
 passwordArray();
+console.log(finalPassword);
 
 
 
@@ -194,37 +190,16 @@ passwordArray();
 
 
 
+// Get references to the #generate element
+var generateBtn = document.querySelector('#generate');
 
+// Write password to the #password input
+function writePassword() {
+  var finalPassword = passwordArray();
+  var passwordText = document.querySelector('#password');
 
+  passwordText.value = finalPassword;
+}
 
-
-
-
-// // Function to prompt user for password options
-// function getPasswordOptions() {
-
-// }
-
-// // Function for getting a random element from an array
-// function getRandom(arr) {
-
-// }
-
-// // Function to generate password with user input
-// function generatePassword() {
-
-// }
-
-// // Get references to the #generate element
-// var generateBtn = document.querySelector('#generate');
-
-// // Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector('#password');
-
-//   passwordText.value = password;
-// }
-
-// // Add event listener to generate button
-// generateBtn.addEventListener('click', writePassword);
+// Add event listener to generate button
+generateBtn.addEventListener('click', writePassword);
