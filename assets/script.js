@@ -91,7 +91,7 @@ var upperCasedCharacters = [
 
 // Function to ask which character options they want. Forcing at least one option.
 function charactersSelection(){
-  alert("Please select what type of Characters you would like to possibly include in your Password!\n(Select at least one type)")
+  alert("Please select what type of Characters you would like to possibly include in your Password!\n(Select at least one type)");
 
   let includeLower1 = confirm("Would you like to include Lowercase Characters in your Password?");
   let includeUpper1 = confirm("Would you like to include Uppercase Characters in your Password?");
@@ -133,7 +133,7 @@ function listCharacters(){
 
 // Function to get length of password. Forcing a number between 10 and 64.
 function getLength(){
-  var length1 = prompt("How long would you like your Password? \n(Between 10 and 64 characters!)")
+  var length1 = prompt("How long would you like your Password? \n(Between 10 and 64 characters!)");
 
   if (length1 < 10){
     alert("Your Password is too short! \nPlease enter a number between 10 and 64!");
