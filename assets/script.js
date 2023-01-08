@@ -91,6 +91,8 @@ var upperCasedCharacters = [
 
 // Function to ask which character options they want. Forcing at least one option.
 function charactersSelection(){
+  alert("Please select what type of Characters you would like to possibly include in your Password!\n(Select at least one type)")
+
   let includeLower1 = confirm("Would you like to include Lowercase Characters in your Password?");
   let includeUpper1 = confirm("Would you like to include Uppercase Characters in your Password?");
   let includeNumber1 = confirm("Would you like to include Numerical Characters in your Password?");
