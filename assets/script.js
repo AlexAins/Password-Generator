@@ -88,11 +88,6 @@ var upperCasedCharacters = [
   'Z'
 ];
 
-// Creating variables for character options
-var includeLower;
-var includeUpper;
-var includeNumber;
-var includeSpecial;
 
 // Function to ask which character options they want. Forcing at least one option.
 function charactersSelection(){
@@ -174,7 +169,7 @@ console.log(finalCharacters);
 randomArray();
 console.log(randomNumbers1);
 
-
+console.log(finalCharacters[64,43,2], finalCharacters[43], finalCharacters[2]);
 
 
 
