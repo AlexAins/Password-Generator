@@ -169,9 +169,21 @@ console.log(finalCharacters);
 randomArray();
 console.log(randomNumbers1);
 
-console.log(finalCharacters[64,43,2], finalCharacters[43], finalCharacters[2]);
+// Function to create new array of Password characters
+function passwordArray(){
+  let passArray = [];
 
+  for (let i=0; i<passwordLength; i++){
+    let passElement = finalCharacters[randomNumbers1[i] - 1];
+    passArray.push(passElement);
+  }
 
+  finalPassword = passArray.join('');
+
+  console.log(finalPassword);
+}
+
+passwordArray();
 
 
 
