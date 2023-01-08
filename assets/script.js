@@ -173,28 +173,18 @@ function passwordArray(){
   return finalPassword;
 }
 
-
-
-charactersSelection();
-listCharacters();
-getLength();
-randomArray();
-passwordArray();
-console.log(finalPassword);
-
-
-
-
-
-
-
-
-
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
 function writePassword() {
+
+  charactersSelection();
+  listCharacters();
+  getLength();
+  randomArray();
+  passwordArray();
+
   var finalPassword = passwordArray();
   var passwordText = document.querySelector('#password');
 
