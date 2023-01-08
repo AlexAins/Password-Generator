@@ -20,14 +20,15 @@ This application provides a random password generator. This generator follows cr
 As shown in the screenshot below:
 
 #### Full Page
-![alt text](./assets/images/Screenshot%202023-01-03%20at%2017.05.00.png)
+![alt text](./assets/images/127.0.0.1_5500_index.html%20(2).png)
 
-#### Console Only
-![alt text](./assets/images/Screenshot%202023-01-03%20at%2017.04.22.png)
+#### Examples of Criteria Alerts
+![alt text](./assets/images/Screenshot%202023-01-08%20at%2022.44.55.png)
+![alt text](./assets/images/Screenshot%202023-01-08%20at%2022.45.09.png)
 
 ## Credits
 
 N/A
 
 ## Deployed Application
-Link to deployed webpage: https://alexains.github.io/Console-Finances/
+Link to deployed webpage: https://alexains.github.io/Password-Generator/
