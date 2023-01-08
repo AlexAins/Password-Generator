@@ -114,7 +114,6 @@ function charactersSelection(){
   }
 }
 
-
 // Function to create list of possible characters from chosen character options.
 function listCharacters(){
   let startingList = [];
@@ -122,22 +121,21 @@ function listCharacters(){
   if (includeLower === true){
     startingList = startingList.concat(lowerCasedCharacters);
   }
-  else if (includeUpper === true){
+  if (includeUpper === true){
     startingList = startingList.concat(upperCasedCharacters);
   }
-  else if (includeNumber === true){
+  if (includeNumber === true){
     startingList = startingList.concat(numericCharacters);
   }
-  else if (includeSpecial === true){
+  if (includeSpecial === true){
     startingList = startingList.concat(specialCharacters);
   }
   
   finalCharacters = startingList;
 }
 
-
 // Function to get length of password. Forcing a number between 10 and 64.
-var length;
+var passwordLength;
 
 function getLength(){
   var length1 = prompt("How long would you like your Password? \n(Between 10 and 64 characters!)")
@@ -151,10 +149,46 @@ function getLength(){
     getLength();
   }
   else{
-    length = length1;
+    passwordLength = length1;
     return;
   }
 }
+
+// Function to generate a random set of number between a set length.
+
+function randomArray(){
+  let randomNumbers = [];
+
+  for (let i = 0; i < passwordLength; i++) {
+    let randomNumber = Math.floor(Math.random() * ( finalCharacters.length - 1 + 1)) + 1;
+    randomNumbers.push(randomNumber);
+  }
+
+  randomNumbers1 = randomNumbers
+}
+
+charactersSelection();
+listCharacters();
+getLength();
+console.log(finalCharacters);
+randomArray();
+console.log(randomNumbers1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
